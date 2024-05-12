@@ -34,19 +34,20 @@ function IPFSUploader({ onUploadComplete }) {
 
   return (
     <div className="p-4 bg-white shadow-md rounded-lg">
-    <h2 className="text-xl font-semibold text-gray-800 mb-4">Upload MP3 to IPFS</h2>
-    <input
+      <h2 className="text-xl font-semibold text-gray-800 mb-4">Upload MP3 to IPFS</h2>
+      <input
         type="file"
         accept=".mp3"
         onChange={handleFileChange}
-        className="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer focus:outline-none focus:border-transparent"
-    />
-    <button
+        className="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer focus:outline-none focus:border-blue-500 focus:bg-white transition duration-150 ease-in-out shadow-sm p-2"
+      />
+
+      <button
         onClick={uploadToIPFS}
         className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-150 ease-in-out"
-    >
+      >
         Upload to IPFS
-    </button>
+      </button>
     </div>
   );
 }
